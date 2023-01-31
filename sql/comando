@@ -1,0 +1,23 @@
+CREATE DATABASE estoque_db;
+
+USE estoque_db;
+
+CREATE TABLE Produtos(
+    id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    nome VARCHAR(100) NOT NULL,
+    valor DOUBLE,
+    quantidade INT,
+    quantidade_min INT
+    );
+
+CREATE TABLE cliente(
+    cliente_id INT AUTO_INCREMENT PRIMARY KEY,
+    cliente_nome VARCHAR(100),
+    cliente_email VARCHAR(150)
+);
+
+CREATE TABLE vendedor (
+    vendedor_id int AUTO_INCREMENT PRIMARY KEY,
+    vendedor_nome varchar(100) NOT NULL,
+    vendedor_email varchar(150) NOT NULL
+);
