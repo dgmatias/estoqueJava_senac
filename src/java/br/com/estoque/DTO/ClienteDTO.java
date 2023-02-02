@@ -11,9 +11,10 @@ package br.com.estoque.DTO;
 public class ClienteDTO {
     private int clienteId;
     private String cliente_nome;
+    private String cliente_email;
     
     public int getClienteId(){
-        return clienteId
+        return clienteId;
     }
     
     public void setClienteId(int clienteId){
@@ -21,19 +22,19 @@ public class ClienteDTO {
     }
     
     public String getClienteNome(){
-        return clienteNome;
+        return cliente_nome;
     }
     
     public void setClienteNome(String clienteNome){
-        this.clienteNome = clienteNome;
+        this.cliente_nome = clienteNome;
     }
     
     public String getClienteEmail(){
-        return clienteEmail;
+        return cliente_email;
     }
     
     public void setClienteEmail(String clienteEmail){
-        this clienteEmail = clienteEmail;
+        this.cliente_email = clienteEmail;
     }
     
 }

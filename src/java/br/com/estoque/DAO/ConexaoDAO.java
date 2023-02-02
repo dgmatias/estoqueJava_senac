@@ -6,9 +6,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-
-
-
 public class ConexaoDAO {
 
     public Connection conexaoDB () throws ClassNotFoundException { //metodo responsável pela conexão ao banco de dados

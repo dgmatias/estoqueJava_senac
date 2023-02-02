@@ -23,7 +23,7 @@ public class ClienteDAO {
     
     public void CadastrarCliente(ClienteDTO clienteDTO) throws ClassNotFoundException{
         String sql = "INSERT INTO cliente (cliente_id, cliente_nome, cliente_email) VALUES (?, ? , ?)";
-        conn = new ConexaoDAO().conexaoBD();
+        conn = new ConexaoDAO().conexaoDB();
         
         try{
             pstm = conn.prepareStatement(sql);
@@ -36,9 +36,10 @@ public class ClienteDAO {
             
         }
     }
+    
     public ArrayList<ClienteDTO> PesquisarCliente() throws ClassNotFoundException{
         String sql = "SELECT * FROM cliente";
-        conn = new ConexaoDAO().conexaoBD();
+        conn = new ConexaoDAO().conexaoDB();
         
         try{
             pstm = conn.prepareStatement(sql);
@@ -89,7 +90,7 @@ public class ClienteDAO {
     
     public void ExcluirCliente(ClienteDTO clienteDTO) throws ClassNotFoundException{
         String sql = "DELETE FROM cliente WHERE id = ?";
-        conn = new ConexaoDAO().conexaoBD();
+        conn = new ConexaoDAO().conexaoDB();
         
         try{
             pstm = conn.prepareStatement(sql);

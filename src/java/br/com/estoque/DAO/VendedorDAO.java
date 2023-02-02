@@ -1,5 +1,4 @@
-
-package br.com.estoque.DAO;
+package br.com.estoque.DAO;;;;
 
 //Importando as bibliotecas
 
@@ -26,10 +25,10 @@ public class VendedorDAO {
        try {
            
            pstm = conn.prepareStatement(sql); //Prepara o comando SQL
-           pstm.setString(1, VendedorDTO.getNome()); //Setando o nome, equivalente ao BindValue
+           pstm.setString(1, vendedorDTO.getNome()); //Setando o nome, equivalente ao BindValue
            pstm.execute();
            pstm.close();
-       } catch (SQLExepction e) {
+       } catch (SQLException e) {
            
        }
    }
