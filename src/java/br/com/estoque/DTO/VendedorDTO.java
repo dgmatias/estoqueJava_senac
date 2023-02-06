@@ -10,7 +10,6 @@ public class VendedorDTO {
         return this.vendedor_id;
     }
     
-    
     public void setId(int vendedor_id){
         this.vendedor_id = vendedor_id;
     }

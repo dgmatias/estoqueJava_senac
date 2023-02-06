@@ -19,17 +19,17 @@
             
             <label for="">
                 Nome: <br>
-            </label><br>
+            </label>
             
             <input type="text" name="nome">
 
             <label for="">
                 E-mail: <br>
-            </label><br>
+            </label>
             
-            <input type="text" name="email">
+            <input type="text" name="email"> <br>
             
-            <input type="submit" value="cadastrar" t>
+            <input type="submit" value="cadastrar">
 
         </form>
 
