@@ -7,7 +7,7 @@ public class VendedorDTO {
     private String vendedor_email;
     
     public int getId(){
-        return this.vendedor_id;
+        return vendedor_id;
     }
     
     public void setId(int vendedor_id){
@@ -23,7 +23,7 @@ public class VendedorDTO {
     }
     
     public String getEmail(){
-        return this.vendedor_email;
+        return vendedor_email;
     }
     
     public void setEmail(String vendedor_email){
