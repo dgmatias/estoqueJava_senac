@@ -21,7 +21,7 @@
                 Nome: <br>
             </label>
             
-            <input type="text" name="nome">
+            <input type="text" name="nome"> <br>
 
             <label for="">
                 E-mail: <br>

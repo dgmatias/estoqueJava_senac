@@ -11,7 +11,7 @@
             
             <a type="button" class="btn btn-primary" href="" >Produtos</a> <br>
             <a type="button" class="btn btn-primary" href="" >Clientes</a> <br>
-            <a type="button" class="btn btn-primary" href="vendedores/frmCadastrarVendedor.jsp">Vendedor</a> <br>
+            <a type="button" class="btn btn-primary" href="vendedores/listarVendedor.jsp">Vendedor</a> <br>
        
         </div>
     

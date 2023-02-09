@@ -13,10 +13,10 @@
         <%
             try{
                 VendedorDTO vendedorDTO = new VendedorDTO();
-                VendedorDTO.setNome(request.getParameter("nome"));
-                VendedorDTO.setEmail(request.getParameter("email"));
+                vendedorDTO.setNome(request.getParameter("nome"));
+                vendedorDTO.setEmail(request.getParameter("email"));
                 VendedorDAO vendedorDAO = new VendedorDAO();
-                VendedorDAO.CadastrarVendedor(VendedorDTO);
+                vendedorDAO.CadastrarVendedor(vendedorDTO);
                 
                 response.sendRedirect("listarVendedor.jsp");
             } catch(Exception e){

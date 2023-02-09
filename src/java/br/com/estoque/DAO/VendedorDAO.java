@@ -84,18 +84,18 @@ public class VendedorDAO {
          pstm  = conn.prepareStatement(sql);
          rs = pstm.executeQuery();
            
-         for (int i = 0; rs.next(); i++); {
+         while(rs.next()) {
            
            VendedorDTO vendedorDTO = new VendedorDTO();
            vendedorDTO.setId(rs.getInt("vendedor_id") );
            vendedorDTO.setNome(rs.getString("vendedor_nome") );
            vendedorDTO.setEmail(rs.getString("vendedor_email") );
            
-           lista.add(vendedorDTO);
+           lista.add(vendedorDTO);           
            
-           pstm.close();
-           
-          } 
+          }
+         
+         pstm.close();
                   
        }  catch (SQLException e) {
            
