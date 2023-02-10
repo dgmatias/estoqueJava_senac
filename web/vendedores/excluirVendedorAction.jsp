@@ -14,7 +14,7 @@
                 );
                 
                 VendedorDAO vendedorDAO = new VendedorDAO();
-                VendedorDAO.ExcluirVendedor(vendedorDTO);
+                vendedorDAO.ExcluirVendedor(vendedorDTO);
                 
                 response.sendRedirect("listarVendedor.jsp");
             } catch(Exception e){

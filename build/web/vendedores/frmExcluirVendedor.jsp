@@ -12,6 +12,24 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <div> <h1>Excluir vendedor </h1> </div>
+        
+        <form>
+            
+            <label> Id </label> <br>
+            
+            <input type="text" name="id" value="<%=request.getParameter("id")%>" /> <br>
+            
+            <label> Nome </label> <br>
+            
+            <input type="text" name="nome" value="<%=request.getParameter("nome")%>" /> <br>
+
+            <label> Email </label> <br>
+            
+            <input type="text" name="email" value="<%=request.getParameter("email")%>" /> <br>
+            
+            <input type="submit">
+        </form>
+        
     </body>
 </html>
