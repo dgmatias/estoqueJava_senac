@@ -31,7 +31,7 @@
                                     out.print(lista.get(i).getEmail() );
                                     
                                     
-                                    out.print("<a type='button' href='frmEditarVendedor.jsp?id=" 
+                                    out.print("<a type='button' href='frmAlterarVendedor.jsp?id=" 
                                                 + lista.get(i).getId() +
                                                 "&nome="+ lista.get(i).getNome() + 
                                                 "&email="+ lista.get(i).getEmail()+                                                                                               
@@ -40,7 +40,7 @@
                                                 + lista.get(i).getId() +
                                                 "&nome="+ lista.get(i).getNome() + 
                                                 "&email="+ lista.get(i).getEmail()+                                                
-                                                "'>Excluir</a>");
+                                                "'>Excluir</a>"); 
                                      
                                 %>    
                                 

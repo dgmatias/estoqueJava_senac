@@ -1,3 +1,5 @@
+<%@page import="br.com.estoque.DTO.VendedorDTO"%>
+<%@page import="br.com.estoque.DAO.VendedorDAO"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -9,10 +11,8 @@
        <%
             try{
                 VendedorDTO vendedorDTO = new VendedorDTO();
-                vendedorDTO.setId(
-                    Integer.parseInt(request.getParameter("id"))
-                );
-                
+                int id = Integer.parseInt(request.getParameter("id"));
+                vendedorDTO.setId(id);
                 VendedorDAO vendedorDAO = new VendedorDAO();
                 vendedorDAO.ExcluirVendedor(vendedorDTO);
                 

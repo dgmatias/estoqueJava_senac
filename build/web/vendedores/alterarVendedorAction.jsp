@@ -1,3 +1,5 @@
+<%@page import="br.com.estoque.DTO.VendedorDTO"%>
+<%@page import="br.com.estoque.DAO.VendedorDAO"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -15,7 +17,7 @@
                 vendedorDTO.setNome(request.getParameter("nome"));
                 vendedorDTO.setEmail(request.getParameter("email"));
                 VendedorDAO vendedorDAO = new VendedorDAO();
-                vendedorDAO.AlterarVendedor(vendedorDTO);
+                vendedorDAO.EditarVendedor(vendedorDTO);
                 
                 response.sendRedirect("listarVendedor.jsp");
             } catch(Exception e){

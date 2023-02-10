@@ -1,4 +1,5 @@
-
+<%@page import="br.com.estoque.DTO.VendedorDTO"%>
+<%@page import="br.com.estoque.DAO.VendedorDAO"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>

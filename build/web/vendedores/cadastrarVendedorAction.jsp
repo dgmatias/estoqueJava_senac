@@ -13,6 +13,8 @@
         <%
             try{
                 VendedorDTO vendedorDTO = new VendedorDTO();
+                int id = Integer.parseInt(request.getParameter("id"));
+                vendedorDTO.setId(id);
                 vendedorDTO.setNome(request.getParameter("nome"));
                 vendedorDTO.setEmail(request.getParameter("email"));
                 VendedorDAO vendedorDAO = new VendedorDAO();

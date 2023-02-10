@@ -1,9 +1,5 @@
-<%-- 
-    Document   : frmExcluirVendedor
-    Created on : 3 de fev. de 2023, 20:43:01
-    Author     : 51127512022.2
---%>
-
+<%@page import="br.com.estoque.DTO.VendedorDTO"%>
+<%@page import="br.com.estoque.DAO.VendedorDAO"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -14,7 +10,7 @@
     <body>
         <div> <h1>Excluir vendedor </h1> </div>
         
-        <form>
+        <form method="post" action="excluirVendedorAction.jsp">
             
             <label> Id </label> <br>
             
