@@ -37,7 +37,7 @@ public class VendedorDAO {
    
    public void ExcluirVendedor (VendedorDTO vendedorDTO) throws ClassNotFoundException {
        
-       String sql = "Delete from vendedor WHERE = ?";
+       String sql = "Delete from vendedor WHERE vendedor_id = ?";
        
        conn = new ConexaoDAO().conexaoDB();
        
@@ -55,7 +55,7 @@ public class VendedorDAO {
    
    public void EditarVendedor (VendedorDTO vendedorDTO) throws ClassNotFoundException {
        
-       String sql = "Update vendedor set vendedor_nome = ?, vendedor_email = ? where id = ?";
+       String sql = "Update vendedor set vendedor_nome = ?, vendedor_email = ? where vendedor_id = ?";
        
        conn = new ConexaoDAO().conexaoDB();
        

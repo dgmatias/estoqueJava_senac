@@ -3,14 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Diego/Documents/NetBeansProjects/estoqueJava_senac/web/vendedores/alterarVendedorAction.jsp</file>
-            <file>file:/C:/Users/Diego/Documents/NetBeansProjects/estoqueJava_senac/web/vendedores/frmExcluirVendedor.jsp</file>
             <file>file:/C:/Users/Diego/Documents/NetBeansProjects/estoqueJava_senac/src/java/br/com/estoque/DTO/VendedorDTO.java</file>
-            <file>file:/C:/Users/Diego/Documents/NetBeansProjects/estoqueJava_senac/web/index.jsp</file>
-            <file>file:/C:/Users/Diego/Documents/NetBeansProjects/estoqueJava_senac/web/vendedores/excluirVendedorAction.jsp</file>
-            <file>file:/C:/Users/Diego/Documents/NetBeansProjects/estoqueJava_senac/web/vendedores/frmAlterarVendedor.jsp</file>
             <file>file:/C:/Users/Diego/Documents/NetBeansProjects/estoqueJava_senac/src/java/br/com/estoque/DAO/VendedorDAO.java</file>
-            <file>file:/C:/Users/Diego/Documents/NetBeansProjects/estoqueJava_senac/web/vendedores/cadastrarVendedorAction.jsp</file>
             <file>file:/C:/Users/Diego/Documents/NetBeansProjects/estoqueJava_senac/web/vendedores/listarVendedor.jsp</file>
         </group>
     </open-files>
