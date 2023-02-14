@@ -4,6 +4,8 @@
     Author     : 51127512021.2
 --%>
 
+<%@page import="br.com.estoque.DAO.ClienteDAO"%>
+<%@page import="br.com.estoque.DTO.ClienteDTO"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -12,6 +14,18 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <%
+            try{
+                ClienteDTO clienteDTO = new ClienteDTO();
+                int id = Integer.parseInt(request.getParameter("id"));
+                clienteDTO.setClienteId(id);
+                ClienteDAO clienteDAO = new ClienteDAO();
+                clienteDAO.ExcluirCliente(clienteDTO);
+                
+                response.sendRedirect("listarCliente.jsp");
+            } catch(Exception e){
+                System.out.println("Erro"+ e);
+            }
+         %>
     </body>
 </html>

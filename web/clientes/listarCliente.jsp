@@ -4,6 +4,9 @@
     Author     : 51127512021.2
 --%>
 
+<%@page import="br.com.estoque.DTO.ClienteDTO"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="br.com.estoque.DAO.ClienteDAO"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -22,7 +25,7 @@
                 <%
             try{
                 ClienteDAO clienteDAO = new ClienteDAO();
-                ArrayList<ClienteDTO> lista = livroDAO.PesquisarLivro();
+                ArrayList<ClienteDTO> lista = clienteDAO.PesquisarCliente();
 
                 for(int i=0; i < lista.size(); i++){
                     out.print("Código: "+ lista.get(i).getClienteId() + "</br>");
@@ -30,8 +33,8 @@
                     out.print("Email: "+ lista.get(i).getClienteEmail() + "</br>");
 
                     out.print("<a tupe='button' class='btn btn-danger' href='frmExcluirClienteView.jsp?="
-                    + lista.get(i).getLivroId() +
-                    "&nome"+ lista.get(i).getCliente() +
+                    + lista.get(i).getClienteId() +
+                    "&nome"+ lista.get(i).getClienteNome() +
                     "'>Excluir</a>");
 
                 %><br/><br/><%

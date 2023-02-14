@@ -14,7 +14,7 @@
     <body>
         <nav class="navbar bg-light">
             <div class="container">
-                <a href=""><span class="navbar-brand mb-0 h1">Biblioteca</span></a>
+                <a href="./editarClienteAction.jsp"><span class="navbar-brand mb-0 h1">Estoque</span></a>
             </div>
         </nav>
         <div>

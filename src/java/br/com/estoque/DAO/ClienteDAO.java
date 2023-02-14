@@ -27,8 +27,8 @@ public class ClienteDAO {
         
         try{
             pstm = conn.prepareStatement(sql);
-            pstm.setString (1, clienteDTO.getClienteNome());
-            pstm.setString (2, clienteDTO.getClienteEmail());
+            pstm.setString (2, clienteDTO.getClienteNome());
+            pstm.setString (3, clienteDTO.getClienteEmail());
             pstm.execute();
             pstm.close();
             
@@ -77,9 +77,9 @@ public class ClienteDAO {
         
         try{
             pstm = conn.prepareStatement(sql);
-            pstm.setString(1, clienteDTO.getClienteNome());
-            pstm.setString(2, clienteDTO.getClienteEmail());
-            pstm.setInt(3, clienteDTO.getClienteId());
+            pstm.setInt(1, clienteDTO.getClienteId());
+            pstm.setString(2, clienteDTO.getClienteNome());
+            pstm.setString(3, clienteDTO.getClienteEmail());
             
             pstm.execute();
             pstm.close();
@@ -94,9 +94,9 @@ public class ClienteDAO {
         
         try{
             pstm = conn.prepareStatement(sql);
-            pstm.setString(1, clienteDTO.getClienteNome());
-            pstm.setString(2, clienteDTO.getClienteEmail());
-            pstm.setInt(3, clienteDTO.getClienteId());
+            pstm.setInt(1, clienteDTO.getClienteId());
+            pstm.setString(2, clienteDTO.getClienteNome());
+            pstm.setString(3, clienteDTO.getClienteEmail());
             pstm.execute();
             pstm.close();
         }catch(SQLException e){
